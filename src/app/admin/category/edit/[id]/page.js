@@ -1,10 +1,9 @@
 "use client";
 
-import React,{useEffect,useState} from "react";
+import React, { useState, useEffect } from "react";
 import AdminLayout from "@/app/layouts/dashboard-admin";
-import { useParams } from "next/navigation";
 import { getCookie } from "cookies-next";
-import { useRouter } from "next/navigation";
+import { useParams, useRouter } from 'next/navigation';
 
 export default function editCategory() {
   const params = useParams();
@@ -28,7 +27,7 @@ export default function editCategory() {
   useEffect(() => {
     getCategory();
 
-  }, []); //lanjut say apa habis ini muy aku disuruh shalat muy maafff soalnya hari ini ada pengajian maaf bangetttt maaf ya muy, soalnya jam 4 mulai pengajiannya maaf banget
+  }, []); 
 
   const updateCategory = async (e) => {
     e.preventDefault();
