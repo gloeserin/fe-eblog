@@ -52,13 +52,11 @@ export default function Register() {
       <div className="w-full max-w-md p-6 bg-white border rounded-md shadow-lg font-poppins">
         <div className="flex justify-center mb-4 ">
           <div className="text-blue-500 text-2xl font-semibold">
-            <span className="text-gray-800">Dashboard </span>
-            <span className="text-blue-500">Kit</span>
+            <span className="text-gray-800">Register </span>
+            <span className="text-blue-500">E-blg</span>
           </div>
         </div>
-        <h2 className="text-xl font-medium mb-4 text-center ">
-          Register to Ganapatih Blog
-        </h2>
+      
         <form onSubmit={register} >
           <div className="mb-4 ">
             <label
@@ -160,9 +158,9 @@ export default function Register() {
           )} */}
           <div className="text-center mt-4 ">
             <p className="text-gray-600">
-              Dont have an account?
-              <a href="/register" className="text-blue-500 hover:text-blue-700">
-                Sign up
+              Already have an account?
+              <a href="/login" className="text-blue-500 hover:text-blue-700">
+                Sign in
               </a>
             </p>
           </div>

@@ -59,13 +59,10 @@ export default function Login() {
       <div className="w-full max-w-md p-6 bg-white border rounded-md shadow-lg font-poppins">
         <div className="flex justify-center mb-4 ">
           <div className="text-blue-500 text-2xl font-semibold">
-            <span className="text-gray-800">Dashboard </span>
-            <span className="text-blue-500">Kit</span>
+            <span className="text-gray-800">Login </span>
+            <span className="text-blue-500">E-Blog</span>
           </div>
-        </div>
-        <h2 className="text-xl font-medium mb-4 text-center ">
-          Log In to Dashboard Kit
-        </h2>
+        </div>       
         <p className="text-gray-600 mb-6 text-center ">
           Enter your email and password below
         </p>
