@@ -108,7 +108,7 @@ export default function Create() {
 
   return (
     <UserLayout>
-      <div className="flex justify-center p-4">
+      <div className="flex justify-center p-4 font-poppins">
         <div className="w-[60vw] bg-white border border-gray-300 rounded-md shadow-sm">
           <div className="flex items-center justify-between p-4 border-b border-gray-300">
             <h1 className="text-2xl font-semibold">Create Articles</h1>

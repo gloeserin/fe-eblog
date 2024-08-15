@@ -42,7 +42,7 @@ export default function Category() {
   return (
     <AdminLayout>
       <div className="flex">
-        <div className="flex-1 p-6">
+        <div className="flex-1 p-6 font-poppins">
           <div className="bg-white border border-gray-300 rounded-md shadow-sm font-plusJakarta">
             <div className="flex items-center justify-between p-4 border-b border-gray-300">
               <h1 className="text-2xl font-semibold font-poppins">
