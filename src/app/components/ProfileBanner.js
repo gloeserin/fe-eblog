@@ -14,7 +14,15 @@ const ProfileBanner = () => {
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
-  const user = JSON.parse(getCookie("user"));
+    let user = null;
+  try {
+    const userCookie = getCookie("user");
+    user = userCookie ? JSON.parse(userCookie) : null;
+  } catch (error) {
+    console.error("Failed to parse 'user' cookie:", error);
+    user = null; // Handle invalid JSON
+  }
+
 
 
   const closeDropdown = () => {
@@ -51,11 +59,11 @@ const ProfileBanner = () => {
           <div className="flex items-center">
             <img
               className="rounded-full w-8 h-8"
-              src={user.img == null ? `https://ui-avatars.com/api/?name=${user.name}` : `http://localhost:8000/uploads/${user.img}`}
+              src={user !== null ? user.img == null ? `https://ui-avatars.com/api/?name=${user.name}` : `http://localhost:8000/uploads/${user.img}` : `https://ui-avatars.com/api/?name=User`}
               alt="profile picture"
             />
             <span className="ml-2 font-medium text-gray-800 font-poppins">
-              {user.name}
+              {user !==null? user.name : "User"}
             </span>
             <button
               onClick={toggleDropdown}

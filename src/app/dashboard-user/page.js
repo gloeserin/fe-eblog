@@ -12,7 +12,7 @@ const DashboardUser = () => {
   return (
    <UserLayout>
       <WelcomeBanner />
-    </UserLayout>//sekarang pakein layout ke si ticket  eh article juga love
+    </UserLayout>
   );
 }
 

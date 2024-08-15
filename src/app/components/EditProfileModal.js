@@ -2,7 +2,15 @@ import { getCookie, setCookie } from "cookies-next";
 import React, { useState } from "react";
 
 const EditProfileModal = ({ closeModal }) => {
-  const user = JSON.parse(getCookie("user"));
+    let user = null;
+  try {
+    const userCookie = getCookie("user");
+    user = userCookie ? JSON.parse(userCookie) : null;
+  } catch (error) {
+    console.error("Failed to parse 'user' cookie:", error);
+    user = null; // Handle invalid JSON
+  }
+
   const [name, setName] = useState(user.name);
   const [username, setUsername] = useState(user.username);
   const [img, setImg] = useState();

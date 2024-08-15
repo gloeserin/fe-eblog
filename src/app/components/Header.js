@@ -5,7 +5,15 @@ import DropdownProfile from "../components/DropdownProfile";
 import { getCookie } from "cookies-next";
 
 function Header() {
-  const user = JSON.parse(getCookie("user"));
+    let user = null;
+  try {
+    const userCookie = getCookie("user");
+    user = userCookie ? JSON.parse(userCookie) : null;
+  } catch (error) {
+    console.error("Failed to parse 'user' cookie:", error);
+    user = null; // Handle invalid JSON
+  }
+
 
   return (
     <header className="sticky top-0 bg-white dark:bg-[#182235] border-b border-slate-200 dark:border-slate-700 z-30">

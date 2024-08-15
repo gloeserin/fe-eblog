@@ -8,7 +8,7 @@ import Profile from '../components/ProfileBanner';
 const UserLayout = ({children}) => {
   
 
-  return (
+  return ( 
     <div className="flex h-screen overflow-hidden bg-bg-primary">
     {/* Sidebar */}
     <SidebarPeminjam />
