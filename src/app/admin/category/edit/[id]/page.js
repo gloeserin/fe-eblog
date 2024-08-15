@@ -50,7 +50,7 @@ export default function EditCategory() {
     <AdminLayout>
       <div className="flex">
         <div className="flex-1 p-6">
-          <div className="bg-white border border-gray-300 rounded-md shadow-sm font-plusJakarta">
+          <div className="bg-white border border-gray-300 rounded-md shadow-sm font-poppins">
             <div className="flex items-center justify-between p-4 border-b border-gray-300">
               <h1 className="text-2xl font-semibold font-poppins">
                 Edit Category

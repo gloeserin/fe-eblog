@@ -47,22 +47,7 @@ function UserArticleTable({ }) {
       .catch((error) => console.error("Error deleting article:", error));
   }
 
-  // const indexOfLastTicket = currentPage * rowsPerPage;
-  // const indexOfFirstTicket = indexOfLastTicket - rowsPerPage;
-  // const currentTickets = tickets.slice(indexOfFirstTicket, indexOfLastTicket);
-
-  // const totalPages = Math.ceil(tickets.length / rowsPerPage);
-
-  // const handlePageChange = (page) => {
-  //     if (page > 0 && page <= totalPages) {
-  //         setCurrentPage(page);
-  //     }
-  // };
-
-  // const handleRowsPerPageChange = (event) => {
-  //     setRowsPerPage(parseInt(event.target.value, 10));
-  //     setCurrentPage(1);
-  // };
+  
 
   return (
     <div className="relative overflow-x-auto">

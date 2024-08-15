@@ -42,7 +42,7 @@ function SidebarPeminjam() {
             <FaFolderOpen className="text-xl text-white" />
           </div>
           <div className="text-white text-lg font-semibold font-poppins ml-2">
-            Dashboard Kit
+            Dashboard E-Blog
           </div>
         </div>
         <div className="flex flex-col items-start mt-10 p-4 space-y-2 font-poppins">

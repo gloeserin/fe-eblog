@@ -45,7 +45,7 @@ function AdminArticleTable({ }) {
       .then((data) => {
         console.log(data);
         getArticles();
-      })//tinggal tambahin disini buttonnya sm kamu silakan tambahinn buttonapa kan udah gasih itu buttib buat create ada ga di ad min coba cek sama ed it juga aoajah ada muy oulang dulu boleh gak udah mau di kunci
+      })
       .catch((error) => console.error("Error deleting article:", error));
   }
 
@@ -133,7 +133,6 @@ function App() {
 
 
   return (
-    //ke layout terus flex-gorw nya hapus
     <AdminLayout>
       <div className="flex flex-col md:flex-row">
         <div className="flex-1 p-4">

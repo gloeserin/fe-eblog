@@ -173,24 +173,7 @@ function App() {
         <div className="bg-white border border-gray-300 rounded-md shadow-sm font-poppins">
           <div className="flex items-center justify-between p-4 border-b border-gray-300">
             <h1 className="text-2xl font-semibold">All User</h1>
-            <div className="flex gap-2">
-              <button className="text-gray-500 px-4 py-2 rounded-md flex items-center gap-1">
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M7 10l5 5 5-5H7z"
-                  ></path>
-                </svg>
-                Filter
-              </button>
+            <div className="flex gap-2">           
               {/* Uncomment to add 'Create' button
               <Link href="/admin/articles/create">
                 <button className="bg-sky-700 text-white px-4 py-2 rounded-lg hover:bg-cyan-600 flex items-center gap-1">
