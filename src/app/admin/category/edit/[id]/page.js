@@ -5,7 +5,7 @@ import AdminLayout from "@/app/layouts/dashboard-admin";
 import { getCookie } from "cookies-next";
 import { useParams, useRouter } from 'next/navigation';
 
-export default function editCategory() {
+export default function EditCategory() {
   const params = useParams();
   const [category, setCategory] = useState(null)
   const router = useRouter();
